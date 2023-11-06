@@ -1,8 +1,8 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 import path from 'path';
-// import { engine } from 'express-handlebars';
 import adminRoutes from './routes/admin';
 import shopRoutes from './routes/shop';
+import { get404 } from './controllers/error';
 
 const app = express();
 
@@ -16,8 +16,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 
-app.use((req: Request, res: Response, next) => {
-	res.status(404).render('404', { pageTitle: 'Page Not Found' });
-});
+app.use(get404);
 
 app.listen(8001);
