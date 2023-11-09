@@ -49,3 +49,4 @@
 3. Javascript templates engines
 4. Controller
 5. Dynamic routes
+6. SQL
