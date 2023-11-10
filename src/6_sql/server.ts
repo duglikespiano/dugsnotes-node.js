@@ -10,6 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(router);
 
 const server = http.createServer(app);
+
 server.listen(portNumber, () => {
 	console.log(`server is on port ${portNumber}`);
 });

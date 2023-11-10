@@ -1,4 +1,4 @@
-import { myDatabase } from '../database/database';
+import { myDatabase } from '../database/rawDatabase';
 
 export const rawQuerySelectDao = () => {
 	return myDatabase.query(`SELECT * FROM test`);
