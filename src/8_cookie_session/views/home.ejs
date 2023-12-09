@@ -1,0 +1,15 @@
+<%- include('includes/header.ejs')%>
+<body>
+	<fieldset>
+		<form action="/login" method="post">
+			<div>
+				<label for="id"> ID : <input type="text" id="id" name="id" class="idInput" /> </label>
+			</div>
+			<div>
+				<label for="password"> Password : <input type="password" name="password" id="password" class="passwordInput" /> </label>
+			</div>
+			<input type="submit" class="submitButton" />
+		</form>
+	</fieldset>
+	<script src="/script.js"></script>
+</body>

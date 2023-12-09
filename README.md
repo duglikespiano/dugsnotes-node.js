@@ -50,3 +50,5 @@
 4. Controller
 5. Dynamic routes
 6. SQL
+7. NoSQL
+8. Cookie-Session
