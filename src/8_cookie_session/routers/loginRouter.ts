@@ -1,18 +1,15 @@
-import { Router } from 'express';
+import { Router, Request, Response } from 'express';
 import { sessionAddController } from '../controllers/sessionController';
+import { cookieChecker } from '../middleware/cookieChecker';
 
 const router = Router();
 
-router.get('/', (req, res) => {
+router.get('/', cookieChecker, (req: Request, res: Response) => {
 	const id = req.cookies['dugshome-id'];
-	if (id) {
-		res.render('loggedInPage', {
-			pageTitle: 'loggedInPage',
-			id,
-		});
-	} else {
-		res.redirect('/');
-	}
+	res.render('loggedInPage', {
+		pageTitle: 'loggedInPage',
+		id,
+	});
 });
 
 router.post('/', sessionAddController);

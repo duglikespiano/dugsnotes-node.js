@@ -55,22 +55,22 @@ const appendDataInSessionFile = async (id: string, password: string) => {
 	if (sessionFileData === '') {
 		sessionFileData = [{ id, password, sessionId: new Date().toString() + Math.random(), lastLogIn: new Date().toISOString() }];
 		fs.writeFile('./src/8_cookie_session/session/session.txt', JSON.stringify(sessionFileData)).catch(console.log);
+		return sessionFileData[0].sessionId;
 	} else {
 		const sessionFileDataIntoJSON = JSON.parse(sessionFileData);
 		const sessionId = new Date().toString() + Math.random();
 		const lastLogIn = new Date().toISOString();
-
 		for (let i = 0; i < sessionFileDataIntoJSON.length; i++) {
 			if (sessionFileDataIntoJSON[i].id === id) {
 				sessionFileDataIntoJSON[i].lastLogIn = new Date().toISOString();
 				fs.writeFile('./src/8_cookie_session/session/session.txt', JSON.stringify(sessionFileDataIntoJSON)).catch(console.log);
-				return;
+				return sessionId;
 			} else {
 				sessionFileDataIntoJSON.push({ id, password, sessionId, lastLogIn });
 				fs.writeFile('./src/8_cookie_session/session/session.txt', JSON.stringify(sessionFileDataIntoJSON)).catch(console.log);
+				return sessionId;
 			}
 		}
-		return sessionId;
 	}
 };
 
