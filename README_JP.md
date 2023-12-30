@@ -51,5 +51,5 @@
 5. Dynamic routes
 6. SQL
 7. NoSQL
-8. Cookie-Session
-9. Authorization、 Authentication、 Middleware
+8. Cookie-Session, Authorization, Authentication, Middleware
+9. Validation
