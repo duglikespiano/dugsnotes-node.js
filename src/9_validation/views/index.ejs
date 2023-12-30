@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="/index.css" rel="stylesheet" />
+		<script defer src="/index.js"></script>
+		<title>Home</title>
+	</head>
+	<body>
+		<form class="validationForm" action="/validation" method="post">
+			<div class="input-container">
+				<label for="name">ID: </label>
+				<input type="text" class="id-input" name="id" />
+			</div>
+			<div class="input-container">
+				<label for="password">Password: </label>
+				<input type="text" class="password-input" name="password" />
+			</div>
+			<input type="submit" class="submit-button" value="Submit" />
+		</form>
+	</body>
+</html>
