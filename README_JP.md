@@ -53,3 +53,4 @@
 7. NoSQL
 8. Cookie-Session, Authorization, Authentication, Middleware
 9. Validation
+10. Error handling
