@@ -34,9 +34,9 @@
 6. 인증 및 인가를 구현 할 것
 7. Error handling을 익힐 것
 8. File upload를 익힐 것
-9. Pagination을 익힐 것
-10. Async, Await를 익힐 것
-11. REST API를 익힐 것
+9. PDF 생성방법을 익힐 것
+10. Pagination을 익힐 것
+11. Async, Await를 익힐 것
 12. GraphQL을 익힐 것
 13. 웹 소켓, Socket.io를 익힐 것
     </br>

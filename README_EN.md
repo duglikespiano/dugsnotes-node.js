@@ -34,9 +34,9 @@
 6. Building pages about Validation and Authentication
 7. Getting used to Error handling
 8. Getting used to File upload
-9. Getting used to Pagination
-10. Getting used to differences between Sync and Async
-11. Getting used to REST API
+9. Getting used to make a PDF file
+10. Getting used to Pagination
+11. Getting used to differences between Sync and Async
 12. Getting used to GraphQL
 13. Getting used to Web Socket, Socket.io
     </br>

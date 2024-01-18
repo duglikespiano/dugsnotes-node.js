@@ -34,9 +34,9 @@
 6. 認証及び認可を具現する事
 7. Error handling を習う事
 8. File upload を習う事
-9. Pagination を習う事
-10. Async, Await を習う事
-11. REST API を習う事
+9. PDF 生成方法を習う事
+10. Pagination を習う事
+11. Async, Await を習う事
 12. GraphQL を習う事
 13. ウェブソケット、 Socket.io を習う事
     </br>
